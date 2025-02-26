@@ -1,0 +1,9 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-java": "^2.1.0"
+  }
+}

@@ -2,8 +2,12 @@ package basic.core.order;
 
 import basic.core.member.Member;
 import basic.core.member.MemberRepository;
+
+import org.springframework.stereotype.Service;
+
 import basic.core.discount.DiscountPolicy;
 
+@Service
 public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;

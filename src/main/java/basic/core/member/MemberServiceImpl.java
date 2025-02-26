@@ -1,5 +1,8 @@
 package basic.core.member;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;

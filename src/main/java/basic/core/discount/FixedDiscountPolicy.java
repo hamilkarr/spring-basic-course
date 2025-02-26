@@ -1,6 +1,8 @@
 package basic.core.discount;
 
 import basic.core.member.Member;
+
+
 import basic.core.member.Grade;
 
 public class FixedDiscountPolicy implements DiscountPolicy{
