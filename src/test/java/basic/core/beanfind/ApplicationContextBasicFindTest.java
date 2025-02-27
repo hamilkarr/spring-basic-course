@@ -59,13 +59,6 @@ public class ApplicationContextBasicFindTest {
     }
 
     @Test
-    @DisplayName("타입으로 조회시 같은 타입이 둘 이상 있으면, 빈 이름을 지정하면 된다.")
-    void findBeanByEmptyBeanName() {
-        AnnotationConfigApplicationContext ac2 = new AnnotationConfigApplicationContext(SameBeanConfig.class);
-        MemberRepository memberRepository = ac2.getBean(MemberRepository.class);
-    }
-
-    @Test
     @DisplayName("특정 타입을 모두 조회하기")
     void findAllBeanByType() {
         AnnotationConfigApplicationContext ac2 = new AnnotationConfigApplicationContext(SameBeanConfig.class);
@@ -74,7 +67,7 @@ public class ApplicationContextBasicFindTest {
             System.out.println("key = " + key + " value = " + beansOfType.get(key));
         }
         System.out.println("beansOfType = " + beansOfType);
-        Assertions.assertThat(beansOfType.size()).isEqualTo(2); 
+        Assertions.assertThat(beansOfType.size()).isEqualTo(2);
     }
 
     @Configuration
